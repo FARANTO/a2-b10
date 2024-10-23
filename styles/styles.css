@@ -1,2 +1,126 @@
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+/* Head Section */
+header{
+    width: 100%;
+    background: #111;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color:#fff;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+nav .logo {
+    color: #E6533C;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
+}
+.topbar{
+    display: flex; 
+    padding: 4px;
+    align-items: center;
+    gap: 47px;
+}
+.topbar>button{
+    border-radius: 46px;
+    background: #E6533C;
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+/* Banner Section */
+.banner{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner-header{
+    color: #fff;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 900;
+}
+#header-shape{
+    font-family: Miama;
+    font-size: 78px;
+    font-style: normal;
+    font-weight: 400;
+}
+.banner-button{
+    margin-top: 10px;
+    display: flex;
+}
+ .join-club{
+    border-radius: 42px;   
+    width: 224px;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    background: #E6533C;
+    color: #fff;
+ }
+ .app{
+    border-radius: 42px;
+    width: 224px;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #111;
+    color: #fff;
+ }
+
+
+
+/* Responsive */
+
+/* Small device */
+@media(max-width:596px) {
+    /* Top navigation */
+    nav{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .topbar {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .topbar a, button {
+        margin-bottom: 10px;
+        font-size: 16px;
+        width: 50%;
+        text-align: center;
+    }
+    button {
+        padding: 10px;
+    }
+
+}
+
+/* Medium Device */
+@media(min-width:596px) and (max-width:992px)
+{     /* Top navigation */
+    nav {
+        width: 100%;
+        margin: 0px -50px;
+    }
+    .topbar{
+        gap: 10px;
+    }
+}
